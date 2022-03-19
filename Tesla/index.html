@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Tesla</title>
   </head>
   <body>
@@ -45,7 +45,10 @@
         <!-- ICI : progress bar-->
 
         <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:43%"></div>
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+            style="width: 43%"
+          ></div>
         </div>
 
         <!-- ICI : alerte -->
@@ -53,21 +56,19 @@
           Bienvenue sur Tesla. Ce site est en maintenance.
           <hr />
           <!-- ICI : les deux boutons -->
-        
-        <div class="btn-group btn-block">
+
+          <div class="btn-group btn-block">
             <a href="#" class="btn btn-danger">Suivre les avancements</a>
             <a href="#" class="btn btn-success">Nous contacter</a>
-        </div>
+          </div>
         </div>
         <nav>
           <!-- ICI : fil d'ariane -->
           <ul class="breadcrumb">
-              <li class="breadcrumb-item">
-                  <a href="#">Acceuil</a>
-              </li>
-              <li class="breadcrumb-item">
-                Maintenance
+            <li class="breadcrumb-item">
+              <a href="#">Acceuil</a>
             </li>
+            <li class="breadcrumb-item">Maintenance</li>
           </ul>
         </nav>
       </div>
@@ -76,28 +77,39 @@
     <!-- DEUXIEME SECTION -->
     <section>
       <div class="container">
-        <!-- ICI : les cartes -->
-
-        <div class="card mb-3 bg-secondary text-white">
-          <img
-            src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png"
-            alt="..." class="card-img-top"
-          />
-          <div class="card-body">
-              <h5 class="card-title">Nouveautés</h5>
-              <P class="card-text">Vous pourrez bientôt acheter une fusées pour aller sur la lune</P>
+        <div class="row mb-3 gy-4">
+          <!-- ICI : les cartes -->
+          <div class="col-md-6">
+            <div class="card bg-secondary text-white">
+              <img
+                src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png"
+                alt="..."
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nouveautés</h5>
+                <p class="card-text">
+                  Vous pourrez bientôt acheter une fusées pour aller sur la lune
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="card mb-3 bg-secondary text-white">
-          <img
-            src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png"
-            alt="..." class="card-img-top"
-          />
-          <div class="card-header">Information</div>
-          <div class="card-body">
-              <h5 class="card-title">Nouveauté</h5>
-              <P class="card-text">Les 30 premiers acheteurs de fusées partiront avec Elon Musk.</P>
+          <div class="col-md-6">
+            <div class="card bg-secondary text-white">
+              <img
+                src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png"
+                alt="..."
+                class="card-img-top"
+              />
+              <div class="card-header">Information</div>
+              <div class="card-body">
+                <h5 class="card-title">Nouveauté</h5>
+                <p class="card-text">
+                  Les 30 premiers acheteurs de fusées partiront avec Elon Musk.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,26 +121,36 @@
         <h2>Contactez-nous</h2>
         <!-- ICI : formulaire -->
         <form>
-           <p>
-               <label for="email">Adresse email</label>
-               <input type="email" class="form-control w-100" placeholder="Entrez votre mail" name="email" id="email">
-               <small class="text-muted">Nous ne partagerons pas votre mail</small>
-           </p>
-           <p>
-               <label for="message">Message</label>
-               <textarea name="message" id="message" class="form-control w-100" rows="3"></textarea>
-           </p>
-           <button type="submit" class="btn btn-outline-light mt-3">Soumettre</button>
+          <p>
+            <label for="email">Adresse email</label>
+            <input
+              type="email"
+              class="form-control w-100"
+              placeholder="Entrez votre mail"
+              name="email"
+              id="email"
+            />
+            <small class="text-muted">Nous ne partagerons pas votre mail</small>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="form-control w-100"
+              rows="3"
+            ></textarea>
+          </p>
+          <button type="submit" class="btn btn-outline-light mt-3">
+            Soumettre
+          </button>
         </form>
       </div>
     </section>
 
     <!-- ICI : pied de page -->
     <footer class="bg-secondary">
-        <div class="container">
-            © Tesla
-        </div>
-
+      <div class="container">© Tesla</div>
     </footer>
 
     <!-- CSS only -->
